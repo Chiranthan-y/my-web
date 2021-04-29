@@ -1,0 +1,49 @@
+.proficiency__right {
+  margin-top: 10rem;
+}
+.proficiency-image {
+  max-width: 700px;
+  max-height: 700px;
+  min-height: 350px;
+  min-width: 350px;
+}
+
+.proficiency h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.proficiency p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #808080;
+}
+
+.proficiency__progressBar {
+  margin-top: 1rem;
+}
+
+@media (max-width: 960px) {
+  .proficiency h1 {
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+  .proficiency p {
+    font-size: 1.5rem;
+  }
+  .proficiency__right {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .proficiency h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .proficiency p {
+    font-size: 1rem;
+  }
+  .proficiency__right {
+    margin-top: 1rem;
+  }
+}

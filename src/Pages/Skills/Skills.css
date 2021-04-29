@@ -1,0 +1,53 @@
+.skills-image {
+  max-width: 700px;
+  max-height: 700px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.skills h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 10rem;
+}
+
+.skills h6 {
+  color: #808080;
+  font-size: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+.skills h6:hover {
+  color: #407bff;
+}
+
+.skills p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #808080;
+}
+
+@media (max-width: 960px) {
+  .skills h1 {
+    font-size: 4rem;
+    margin-top: 7rem;
+  }
+  .skills p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .skills h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .skills p {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+  }
+}
