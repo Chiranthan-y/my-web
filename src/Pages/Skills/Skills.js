@@ -15,6 +15,8 @@ import {
   SiNpm,
 } from 'react-icons/si';
 
+import data from './../../Data/index.json';
+
 const Skills = () => {
   return (
     <div className='container-fluid skills' id='skills'>
@@ -24,10 +26,8 @@ const Skills = () => {
         </div>
         <div className='col'>
           <div className='container-fluid'>
-            <h1>What I do!</h1>
-            <p>
-              CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
-            </p>
+            <h1>{data.Skills.heading}</h1>
+            <p>{data.Skills.title}</p>
             <div className='container-fluid skills__icon d-flex flex-wrap justify-content-around'>
               <h6>
                 <SiHtml5 size={40} /> HTML5
@@ -63,12 +63,9 @@ const Skills = () => {
                 <SiAmazonaws size={40} /> aws
               </h6>
             </div>
-            <p>
-              Develop highly interactive Front end / User Interfaces for your
-              web and mobile applications
-            </p>
-            <p>Progressive Web Applications ( PWA ) in normal and SPA Stacks</p>
-            <p>Integration of third party services such as Firebase/ AWS</p>
+            {data.Skills.subtitle.map((text) => {
+              return <p>{text}</p>;
+            })}
           </div>
         </div>
       </div>

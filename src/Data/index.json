@@ -1,0 +1,37 @@
+{
+  "Home": {
+    "title": "Hi, I'm Chiranthan Y",
+    "subtitle": "A passionate Full Stack Software Developer having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+  },
+  "Skills": {
+    "heading": "What I do!",
+    "title": "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+    "subtitle": [
+      "Develop highly interactive Front end / User Interfaces for your web and mobile applications.",
+      "Progressive Web Applications ( PWA ) in normal and SPA Stacks.",
+      "Integration of third party services such as Firebase/ AWS."
+    ]
+  },
+  "Proficiency": {
+    "heading": "Proficiency",
+    "skills": [
+      {
+        "name": "FrontEnd / Design",
+        "percent": 85
+      },
+      {
+        "name": "BackendEnd",
+        "percent": 75
+      },
+      {
+        "name": "Programming",
+        "percent": 90
+      }
+    ]
+  },
+  "Contact": {
+    "heading": "Contact Me!",
+    "title": "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "email": "chiranthan.y@yahoo.com"
+  }
+}

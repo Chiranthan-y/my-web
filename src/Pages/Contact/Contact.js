@@ -1,6 +1,14 @@
 import React from 'react';
 import ContactArt from '../../Assets/ContactArt.svg';
 import './Contact.css';
+import { SiTwitter, SiGithub, SiReddit, SiLinkedin } from 'react-icons/si';
+
+import data from './../../Data/index.json';
+
+const twitter = 'https://twitter.com/itsyca_';
+const github = 'https://github.com/Chiranthan-y';
+const reddit = 'https://www.reddit.com/user/yca-dev';
+const linkedin = 'https://www.linkedin.com/in/chiranthan-y-7144271b6/';
 
 const Contact = () => {
   return (
@@ -11,17 +19,28 @@ const Contact = () => {
         </div>
         <div className='col'>
           <div className='container-fluid'>
-            <h1>Contact Me!</h1>
-            <p>
-              Discuss a project or just want to say hi? My Inbox is open for
-              all.
-            </p>
+            <h1>{data.Contact.heading}</h1>
+            <p>{data.Contact.title}</p>
             <div className='contact__tagContainer'>
-              <a href='mailto:chiranthan.y@yahoo.com' className='contact__tags'>
-                chiranthan.y@yahoo.com
+              <a
+                href={`mailto:${data.Contact.email}`}
+                className='contact__tags'>
+                {data.Contact.email}
               </a>
-              <a href='tel:+918903502305' className='contact__tags'>
-                (890)350 2305
+            </div>
+            <div className='container-fluid contact__icons'>
+              <a href={github} target='_blank' rel='noreferrer'>
+                <SiGithub size={30} color={'#333'} />
+              </a>
+              <a href={twitter} target='_blank' rel='noreferrer'>
+                <SiTwitter size={30} color={'#1DA1F2'} />
+              </a>
+
+              <a href={reddit} target='_blank' rel='noreferrer'>
+                <SiReddit size={30} color={'#FF4500'} />
+              </a>
+              <a href={linkedin} target='_blank' rel='noreferrer'>
+                <SiLinkedin size={30} color={'#2867B2'} />
               </a>
             </div>
           </div>

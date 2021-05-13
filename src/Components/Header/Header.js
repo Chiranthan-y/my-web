@@ -8,7 +8,7 @@ const Header = () => {
     <Headroom>
       <div className='header'>
         <div className=''>
-          <a href='/' className='header__logo'>
+          <a href='/my-web' className='header__logo'>
             {logoText}
           </a>
         </div>
@@ -25,7 +25,7 @@ const Header = () => {
           </li>
           <li>
             <a href='#contact' className='header__list'>
-              Contact me
+              Contact me!
             </a>
           </li>
         </ul>
